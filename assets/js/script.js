@@ -25,7 +25,7 @@ function updatingClock() {
 	let hours = new Date().getHours();
 	let minutes = new Date().getMinutes();
 	let seconds = new Date().getSeconds();
-	pClock.innerHTML = `${hours}:${minutes}:${seconds}`;
+	pClock.innerHTML = `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
 // Timeout and Interval
