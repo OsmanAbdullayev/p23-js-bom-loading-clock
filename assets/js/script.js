@@ -26,8 +26,6 @@ if (loading.style.display == "flex") {
 	}
 }
 
-
-
 function loadingEnds() {
 	loading.style.display = "none";
 	clock.style.display = "flex";
@@ -46,4 +44,4 @@ function updatingClock() {
 setTimeout(initialLoading, 500);
 setInterval(updatingLoading, 1500);
 setInterval(updatingClock, 1000);
-setTimeout(loadingEnds, 3000);
+setTimeout(loadingEnds, 100000);
